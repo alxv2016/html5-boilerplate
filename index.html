@@ -2,78 +2,80 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="A description of the page">
-  <!-- Control the behavior of search engine crawling and indexing -->
-  <meta name="robots" content="index,follow,noodp">
-  <!-- All Search Engines -->
-  <meta name="googlebot" content="index,follow">
-  <!--Page Title-->
-  <title>Page Title</title>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="msapplication-config" content="browerconfig.xml" />
-  <!-- Site Styles-->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A description of the page">
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow,noodp">
+    <!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow">
+    <!--Page Title-->
+    <title>Page Title</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="msapplication-config" content="browerconfig.xml" />
+    <!-- Site Styles-->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!--the html5 outline structure, <section> comes after <h_> tags to pronounce sub sections-->
-  <header>
-    <!--for screen readers brand title-->
-    <h1>Page</h1>
-    <!--header section-->
-    <section>
-      <!--header title-->
-      <h2>navigation</h2>
-      <nav>
-        <!--nav title-->
-        <h3>Main menu</h3>
-      </nav>
-    </section>
-  </header>
-  <!--  -->
-  <main>
-    <!--main content title-->
-    <h1>Cover image</h1>
-    <!--sections within main content-->
-    <section>
-      <!--section titles-->
-      <h2>Intro Copy</h2>
-    </section>
-    <!--    -->
-    <section>
-      <!--      -->
-      <h2>Intro Bricks</h2>
-      <section>
-        <!--sub section titles-->
-        <h3>HC</h3>
-      </section>
-      <section>
-        <h3>BHW</h3>
-      </section>
-      <section>
-        <h3>HPN</h3>
-      </section>
-    </section>
-    <section>
-      <h2>Clients</h2>
-      <section>
-        <h3>clients logo</h3>
-      </section>
-    </section>
-  </main>
-  <!--  -->
-  <footer>
-    <h1>Footer</h1>
-    <section>
-      <h2>footer links</h2>
-    </section>
-  </footer>
+    <!--the html5 outline structure, <section> comes after <h_> tags to pronounce sub sections-->
+    <!--role banner to display for screen readers its the header-->
+    <header role="banner">
+        <!--for screen readers brand title-->
+        <h1>Page</h1>
+        <!--header section-->
+        <section>
+            <!--header title-->
+            <h2>navigation</h2>
+            <!--Aria Labels and roles to display for screen readers-->
+            <nav role="navigation" aria-labelledby="main-nav">
+                <!--nav title-->
+                <h3 id="main-nav">Main menu</h3>
+            </nav>
+        </section>
+    </header>
+    <!--  -->
+    <main role="main" aria-labelledby="cover-img">
+        <!--main content title-->
+        <h1 id="cover-img">Cover image</h1>
+        <!--sections within main content-->
+        <section role="complementary" aria-labelledby="intro">
+            <!--section titles-->
+            <h2 id="intro">Intro Copy</h2>
+        </section>
+        <!--    -->
+        <section>
+            <!--      -->
+            <h2>Intro Bricks</h2>
+            <section>
+                <!--sub section titles-->
+                <h3>HC</h3>
+            </section>
+            <section>
+                <h3>BHW</h3>
+            </section>
+            <section>
+                <h3>HPN</h3>
+            </section>
+        </section>
+        <section>
+            <h2>Clients</h2>
+            <section>
+                <h3>clients logo</h3>
+            </section>
+        </section>
+    </main>
+    <!--  -->
+    <footer role="contentinfo" aria-labelledby="footer">
+        <h1 id="footer">Footer</h1>
+        <nav role="navigation" aria-labelledby="footer-nav">
+            <h2 id="footer-nav">footer links</h2>
+        </nav>
+    </footer>
 
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
